@@ -1,0 +1,15 @@
+body {
+    background-color: dodgerblue;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.center {
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
