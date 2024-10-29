@@ -1,13 +1,10 @@
-const hanoi = (n, firstRod, SecondRod, ThirdRod) => {
-    if (n === 1) {
-        console.log(firstRod + " --> " + SecondRod);
+const hanoi = (n, a, c, b) => {
+    if (n == 0) {
         return;
     }
-    hanoi(n - 1, firstRod, ThirdRod, SecondRod);
-    console.log(firstRod + " --> " + SecondRod);
-    hanoi(n - 1, ThirdRod, SecondRod, firstRod);
-};
+    hanoi(n - 1, a, b, c)
+    console.log(a + " -> " + c);
+    hanoi(n - 1, b, c, a)
 
-// เรียกใช้ฟังก์ชัน hanoi โดยส่งค่า n, 'a', 'c', และ 'b'
-const n = 3; // เปลี่ยนค่า n ได้ตามต้องการ
-hanoi(n, 'a', 'c', 'b');
+};
+hanoi(3,'a','c','b');
